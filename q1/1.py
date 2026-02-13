@@ -5,26 +5,6 @@ from skimage.transform import resize
 from scipy.ndimage import map_coordinates
 import os
 
-
-
-
-def prior(current_image, gamma=1e-3):
-    abs_current_image = np.abs(current_image)
-    return abs_current_image*gamma-gamma**2*np.log(1 + abs_current_image/gamma)
-
-def apply_prior(orig_image):
-    shifteds = np.stack([
-        np.roll(orig_image, 1, axis=0),
-        np.roll(orig_image, -1, axis=0),
-        np.roll(orig_image, 1, axis=1),
-        np.roll(orig_image, -1, axis=1)
-    ], axis=0)
-    diff = orig_image[np.newaxis, :, :] - shifteds
-    smoothness_score = np.sum(prior(diff, gamma=1e-3)) / orig_image.size 
-    #  divide by orig image size for better smoothness calc (o/w values are not comparable across diff img sizes)
-    return smoothness_score
-
-
 def myXrayIntegration(f,t,theta_deg,delta_s,interpolation_scheme=1):
     theta_rad = np.deg2rad(theta_deg)
     costheta = np.cos(theta_rad)
@@ -47,9 +27,6 @@ def myXrayCTRadonTransform(f,delta_t,delta_theta,delta_s):
         for j, theta in enumerate(theta_values):
             radon_transform[i, j] = myXrayIntegration(f,t,theta,delta_s=delta_s)
     return radon_transform
-
-
-
 
 def main():
     

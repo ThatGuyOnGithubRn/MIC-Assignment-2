@@ -1,0 +1,41 @@
+\section{Question 2}
+\begin{figure}[H]
+\centering
+
+% --- Row 1: No filter ---
+\begin{tabular}{c}
+\includegraphics[width=0.35\textwidth]{../q2/output_filtered/recon_no_filter.png} \\
+\textbf{No Filtering}
+\end{tabular}
+
+\vspace{0.5cm}
+
+% --- Row 2: Ram-Lak ---
+\begin{tabular}{cc}
+\includegraphics[width=0.45\textwidth]{../q2/output_filtered/recon_ram_lak_L_0.500.png} &
+\includegraphics[width=0.45\textwidth]{../q2/output_filtered/recon_ram_lak_L_0.250.png} \\
+Ram-Lak ($L = 0.5$) & Ram-Lak ($L = 0.25$)
+\end{tabular}
+
+\vspace{0.5cm}
+\end{figure}
+\begin{figure}[p]
+    \centering
+
+% --- Row 3: Shepp-Logan ---
+\begin{tabular}{cc}
+\includegraphics[width=0.45\textwidth]{../q2/output_filtered/recon_shepp_logan_L_0.500.png} &
+\includegraphics[width=0.45\textwidth]{../q2/output_filtered/recon_shepp_logan_L_0.250.png} \\
+Shepp-Logan ($L = 0.5$) & Shepp-Logan ($L = 0.25$)
+\end{tabular}
+
+\vspace{0.5cm}
+% --- Row 4: Cosine ---
+\begin{tabular}{cc}
+\includegraphics[width=0.45\textwidth]{../q2/output_filtered/recon_cosine_L_0.500.png} &
+\includegraphics[width=0.45\textwidth]{../q2/output_filtered/recon_cosine_L_0.250.png} \\
+Cosine ($L = 0.5$) & Cosine ($L = 0.25$)
+\end{tabular}
+
+\caption{Comparison of reconstructed images using different filters and cutoff frequencies.}
+\end{figure}

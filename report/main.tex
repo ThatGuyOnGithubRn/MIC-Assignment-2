@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[includefoot,bottom=12pt]{geometry}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{bbm}
+\usepackage{tikz}
+\usepackage{derivative}
+
+\geometry{left=1.25in}
+
+\pagestyle{fancy}
+% \fancyhead{}
+% \fancyfoot{}
+
+\makeatletter
+\newcommand*{\centernot}{%
+  \mathpalette\@centernot
+}
+\def\@centernot#1#2{%
+  \mathrel{%
+    \rlap{%
+      \settowidth\dimen@{$\m@th#1{#2}$}%
+      \kern.5\dimen@
+      \settowidth\dimen@{$\m@th#1=$}%
+      \kern-.5\dimen@
+      $\m@th#1\not$%
+    }%
+    {#2}%
+  }%
+}
+\makeatother
+
+\newcommand{\independent}{\perp\mkern-9.5mu\perp}
+\newcommand{\notindependent}{\centernot{\independent}}
+
+% \fancyhead[R]{Neeraje - 23B0940}
+\fancyhead[L]{\leftmark}
+
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+
+\title{MIC Assignment-2}
+
+\author{Aditya Neeraje (23B0940)\\Chaitanyaa Maheshwari (23B0926)}
+
+\date{\today}
+\addbibresource{references.bib}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\pagenumbering{gobble}
+
+\newpage
+
+\pagenumbering{arabic}
+\input{q1/q1.tex}
+\input{q2/q2.tex}
+\input{q3/q3.tex}
+\end{document}
