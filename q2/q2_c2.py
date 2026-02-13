@@ -13,7 +13,6 @@ def rrmse(recon, ref):
 def myFilter(f, filter_type='ram_lak', L=None):
     N = f.shape[0]
     w = np.fft.fftfreq(N).reshape(-1,1)
-    w*=(2*np.pi)
     if L is None:
         L = np.max(np.abs(w))
     ramp = np.abs(w)
@@ -21,7 +20,7 @@ def myFilter(f, filter_type='ram_lak', L=None):
     if filter_type == 'ram_lak':
         filter_response = ramp
     elif filter_type == 'shepp_logan':
-        filter_response = ramp * np.sinc(w / (2*L*np.pi))
+        filter_response = ramp * np.sinc(w / (2*L))
     elif filter_type == 'cosine':
         filter_response = ramp * np.cos(np.pi * w / (2*L))
     elif filter_type == 'none':
@@ -48,49 +47,32 @@ def main():
 
     radon_transform = radon(phantom, theta=np.arange(0, 180, 3), circle=False)
 
-    freqs = 2*np.pi*np.fft.fftfreq(radon_transform.shape[0])
+    freqs = np.fft.fftfreq(radon_transform.shape[0])
     wmax = np.max(np.abs(freqs))
-    filter_types = ['ram_lak', 'none']
-    L_values = [wmax]
-    if not os.path.exists('./output_q2_b'):
-        os.makedirs('./output_q2_b')
-    # filename = f'./output_q2/orig_phantom.png'
-    # plt.imshow(phantom, cmap='gray')
-    # # plt.title('Original Phantom')
-    # plt.axis('off')
-    # plt.savefig(filename, bbox_inches='tight', pad_inches=0)
-    # print(f"Saved {filename}")
+    filter_types = ['ram_lak']
+    L_values = wmax/50 * np.arange(1, 51)
+    if not os.path.exists('./output_q2_c'):
+        os.makedirs('./output_q2_c')
     for mask, sigma in zip([mask1, mask5, None], [1, 5, 0]):
         if mask is not None:
             orig_image = convolve2d(phantom, mask, mode='same', boundary='symm')
         else:
             orig_image = phantom
         radon_transform = radon(orig_image, theta=np.arange(0, 180, 3), circle=False)
-        plt.imshow(orig_image, cmap='gray')
-        plt.axis('off')
-        filename = f'./output_q2_b/radon_smoothed_sigma_{sigma}.png'
-        plt.savefig(filename, bbox_inches='tight', pad_inches=0)
-        plt.close()
-
-        # normalizing the phantom too for correct rrmse calc (since recon is normalized later)
-        normalized_phantom = (phantom - phantom.min()) / (phantom.max() - phantom.min())
         for filter_type in filter_types:
+            rrmses = []
             for L in L_values:
                 filtered = myFilter(radon_transform, filter_type=filter_type, L=L)
                 recon_img = iradon(filtered, theta=np.arange(0, 180, 3), circle=False, filter_name=None)
                 recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
-                
-
-                # with open(f'recon_img_{filter_type}_L_{L:.3f}.txt', 'w') as f:
-                #     for row in recon_img:
-                #         f.write(' '.join(f'{val:.6f}' for val in row) + '\n')
-                # recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
-                print(f"RRMSE for {filter_type} filter with L={L/(2*np.pi):.3f}: {rrmse(recon_img, normalized_phantom):.6f}")
-                filename = f'./output_q2_b/recon_{filter_type}_L_{L:.3f}_sigma_{sigma}.png'
-                plt.imshow(recon_img, cmap='gray')
-                plt.axis('off')
-                plt.savefig(filename, bbox_inches='tight', pad_inches=0)
-                plt.close()
+                # rrmses.append(rrmse(recon_img, phantom))
+                rrmses.append(rrmse(recon_img, orig_image))
+            plt.plot(L_values, rrmses, label=f'{filter_type} filter, sigma={sigma}')
+            plt.xlabel('L')
+            plt.ylabel('RRMSE')
+            plt.legend()
+            plt.savefig(f'./output_q2_c/rrmse_vs_L_sigma_{sigma}.png')
+            plt.close()
 
 
 if __name__ == "__main__":
