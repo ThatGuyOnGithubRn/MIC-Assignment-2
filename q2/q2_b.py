@@ -65,6 +65,7 @@ def main():
             orig_image = convolve2d(phantom, mask, mode='same', boundary='symm')
         else:
             orig_image = phantom
+        orig_image = (orig_image - orig_image.min()) / (orig_image.max() - orig_image.min())
         radon_transform = radon(orig_image, theta=np.arange(0, 180, 3), circle=False)
         plt.imshow(orig_image, cmap='gray')
         plt.axis('off')
@@ -72,8 +73,6 @@ def main():
         plt.savefig(filename, bbox_inches='tight', pad_inches=0)
         plt.close()
 
-        # normalizing the phantom too for correct rrmse calc (since recon is normalized later)
-        normalized_phantom = (phantom - phantom.min()) / (phantom.max() - phantom.min())
         for filter_type in filter_types:
             for L in L_values:
                 filtered = myFilter(radon_transform, filter_type=filter_type, L=L)
@@ -85,7 +84,7 @@ def main():
                 #     for row in recon_img:
                 #         f.write(' '.join(f'{val:.6f}' for val in row) + '\n')
                 # recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
-                print(f"RRMSE for {filter_type} filter with L={L/(2*np.pi):.3f}: {rrmse(recon_img, normalized_phantom):.6f}")
+                print(f"RRMSE for {filter_type} filter with L={L/(2*np.pi):.3f}: {rrmse(recon_img, orig_image):.6f}")
                 filename = f'./output_q2_b/recon_{filter_type}_L_{L:.3f}_sigma_{sigma}.png'
                 plt.imshow(recon_img, cmap='gray')
                 plt.axis('off')

@@ -51,8 +51,8 @@ def main():
     wmax = np.max(np.abs(freqs))
     filter_types = ['ram_lak']
     L_values = wmax/50 * np.arange(1, 51)
-    if not os.path.exists('./output_q2_c'):
-        os.makedirs('./output_q2_c')
+    if not os.path.exists('./output_q2_c3'):
+        os.makedirs('./output_q2_c3')
     for mask, sigma in zip([mask1, mask5, None], [1, 5, 0]):
         if mask is not None:
             orig_image = convolve2d(phantom, mask, mode='same', boundary='symm')
@@ -71,7 +71,7 @@ def main():
             plt.xlabel('L')
             plt.ylabel('RRMSE')
             plt.legend()
-            plt.savefig(f'./output_q2_c/rrmse_vs_L_sigma_{sigma}.png')
+            plt.savefig(f'./output_q2_c3/rrmse_vs_L_sigma_{sigma}.png', bbox_inches='tight', pad_inches=0)
             plt.close()
 
 
