@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.13)  14 FEB 2026 00:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.14)  14 FEB 2026 01:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/aditya/Aditya/IIT Bombay/Sem 6/MIC/MIC-Assignment-2/report/main.tex"
-(/home/aditya/Aditya/IIT Bombay/Sem 6/MIC/MIC-Assignment-2/report/main.tex
+**/home/autizchait/Desktop/SEM6/CS736:MIC/assignmentMathImagingRecon/report/main.tex
+(/home/autizchait/Desktop/SEM6/CS736:MIC/assignmentMathImagingRecon/report/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -822,682 +822,202 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 54.
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-No file main.toc.
+) (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./q1/q1.tex
-<../q1/output/radon_transform_delta_s_0.5.png, id=16, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_0.5.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_0.5.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_0.5.png  used on input line 8.
-(pdftex.def)             Requested size: 129.545pt x 97.15668pt.
-<../q1/output/radon_transform_delta_s_1.png, id=18, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_1.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_1.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_1.png  used on input line 9.
-(pdftex.def)             Requested size: 129.545pt x 97.15668pt.
-<../q1/output/radon_transform_delta_s_3.png, id=19, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_3.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_3.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_3.png  used on input line 10.
-(pdftex.def)             Requested size: 129.545pt x 97.15668pt.
-<../q1/output/radon_transform_delta_s_0.1.png, id=20, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_0.1.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_0.1.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_0.1.png  used on input line 22.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output/radon_transform_delta_s_10.png, id=21, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_10.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_10.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_10.png  used on input line 23.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_0.1.png, id=22, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_0.1.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_0.1.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_0.1.png  used on input line 31.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_0.5.png, id=23, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_0.5.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_0.5.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_0.5.png  used on input line 32.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_2.5.png, id=24, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_2.5.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_2.5.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_2.5.png  used on input line 40.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_5.png, id=25, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_5.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_5.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_5.png  used on input line 41.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_0.1.png, id=26, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_0.1.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_0.1.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_0.1.png  used on input line 49.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_0.5.png, id=27, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_0.5.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_0.5.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_0.5.png  used on input line 50.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_2.5.png, id=28, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_2.5.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_2.5.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_2.5.png  used on input line 58.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_5.png, id=29, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_5.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_5.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_5.png  used on input line 59.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+Overfull \hbox (3.18387pt too wide) in paragraph at lines 154--154
+[]\OT1/cmr/bx/n/14.4 Question 1: X-Ray Com-puted To-mog-ra-phy { Radon Trans-
+ []
 
-
-LaTeX Warning: Float too large for page by 244.0213pt on input line 64.
-
-) (./q2/q2.tex
-<../q2/output_filtered/recon_no_filter.png, id=30, 266.6763pt x 266.6763pt>
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 159.
+<./../q1/output/radon_transform_delta_s_0.5.png, id=32, 462.528pt x 346.896pt>
+File: ./../q1/output/radon_transform_delta_s_0.5.png Graphic file (type png)
+<use ./../q1/output/radon_transform_delta_s_0.5.png>
+Package pdftex.def Info: ./../q1/output/radon_transform_delta_s_0.5.png  used on input line 247.
+(pdftex.def)             Requested size: 215.90616pt x 161.92957pt.
+<./../q1/output/radon_transform_delta_s_1.png, id=34, 462.528pt x 346.896pt>
+File: ./../q1/output/radon_transform_delta_s_1.png Graphic file (type png)
+<use ./../q1/output/radon_transform_delta_s_1.png>
+Package pdftex.def Info: ./../q1/output/radon_transform_delta_s_1.png  used on input line 250.
+(pdftex.def)             Requested size: 215.90616pt x 161.92957pt.
+<./../q1/output/radon_transform_delta_s_3.png, id=35, 462.528pt x 346.896pt>
+File: ./../q1/output/radon_transform_delta_s_3.png Graphic file (type png)
+<use ./../q1/output/radon_transform_delta_s_3.png>
+Package pdftex.def Info: ./../q1/output/radon_transform_delta_s_3.png  used on input line 253.
+(pdftex.def)             Requested size: 215.90616pt x 161.92957pt.
+[1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2 <./../q1/output/radon_transform_delta_s_0.5.png> <./../q1/output/radon_transform_delta_s_1.png> <./../q1/output/radon_transform_delta_s_3.png>]
+<./../q1/output_part_c/projection_theta_0_delta_s_0.5.png, id=62, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_0_delta_s_0.5.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_0_delta_s_0.5.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_0_delta_s_0.5.png  used on input line 271.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_90_delta_s_0.5.png, id=63, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_90_delta_s_0.5.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_90_delta_s_0.5.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_90_delta_s_0.5.png  used on input line 272.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_0_delta_s_1.png, id=64, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_0_delta_s_1.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_0_delta_s_1.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_0_delta_s_1.png  used on input line 275.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_90_delta_s_1.png, id=65, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_90_delta_s_1.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_90_delta_s_1.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_90_delta_s_1.png  used on input line 276.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_0_delta_s_3.png, id=66, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_0_delta_s_3.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_0_delta_s_3.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_0_delta_s_3.png  used on input line 279.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_90_delta_s_3.png, id=67, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_90_delta_s_3.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_90_delta_s_3.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_90_delta_s_3.png  used on input line 280.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+ [3 <./../q1/output_part_c/projection_theta_0_delta_s_0.5.png> <./../q1/output_part_c/projection_theta_90_delta_s_0.5.png> <./../q1/output_part_c/projection_theta_0_delta_s_1.png> <./../q1/output_part_c/projection_theta_90_delta_s_1.png> <./../q1/output_part_c/projection_theta_0_delta_s_3.png> <./../q1/output_part_c/projection_theta_90_delta_s_3.png>]
+<./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png, id=81, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png Graphic file (type png)
+<use ./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png>
+Package pdftex.def Info: ./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png  used on input line 320.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png, id=82, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png Graphic file (type png)
+<use ./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png>
+Package pdftex.def Info: ./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png  used on input line 323.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png, id=83, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png Graphic file (type png)
+<use ./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png>
+Package pdftex.def Info: ./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png  used on input line 326.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_t/radon_transform_delta_t_0.1.png, id=84, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_t/radon_transform_delta_t_0.1.png Graphic file (type png)
+<use ./../q1/output_delta_t/radon_transform_delta_t_0.1.png>
+Package pdftex.def Info: ./../q1/output_delta_t/radon_transform_delta_t_0.1.png  used on input line 347.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_t/radon_transform_delta_t_0.5.png, id=85, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_t/radon_transform_delta_t_0.5.png Graphic file (type png)
+<use ./../q1/output_delta_t/radon_transform_delta_t_0.5.png>
+Package pdftex.def Info: ./../q1/output_delta_t/radon_transform_delta_t_0.5.png  used on input line 350.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_t/radon_transform_delta_t_2.5.png, id=86, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_t/radon_transform_delta_t_2.5.png Graphic file (type png)
+<use ./../q1/output_delta_t/radon_transform_delta_t_2.5.png>
+Package pdftex.def Info: ./../q1/output_delta_t/radon_transform_delta_t_2.5.png  used on input line 353.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+ [4 <./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png> <./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png> <./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png>] [5 <./../q1/output_delta_t/radon_transform_delta_t_0.1.png> <./../q1/output_delta_t/radon_transform_delta_t_0.5.png> <./../q1/output_delta_t/radon_transform_delta_t_2.5.png>]) (./q2/q2.tex
+<../q2/output_filtered/recon_no_filter.png, id=108, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_no_filter.png Graphic file (type png)
 <use ../q2/output_filtered/recon_no_filter.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_no_filter.png  used on input line 7.
 (pdftex.def)             Requested size: 151.13693pt x 151.13626pt.
-<../q2/output_filtered/recon_ram_lak_L_0.500.png, id=31, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_ram_lak_L_0.500.png, id=109, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_ram_lak_L_0.500.png Graphic file (type png)
 <use ../q2/output_filtered/recon_ram_lak_L_0.500.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_ram_lak_L_0.500.png  used on input line 15.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_ram_lak_L_0.250.png, id=32, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_ram_lak_L_0.250.png, id=110, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_ram_lak_L_0.250.png Graphic file (type png)
 <use ../q2/output_filtered/recon_ram_lak_L_0.250.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_ram_lak_L_0.250.png  used on input line 16.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_shepp_logan_L_0.500.png, id=33, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_shepp_logan_L_0.500.png, id=111, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_shepp_logan_L_0.500.png Graphic file (type png)
 <use ../q2/output_filtered/recon_shepp_logan_L_0.500.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_shepp_logan_L_0.500.png  used on input line 27.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_shepp_logan_L_0.250.png, id=34, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_shepp_logan_L_0.250.png, id=112, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_shepp_logan_L_0.250.png Graphic file (type png)
 <use ../q2/output_filtered/recon_shepp_logan_L_0.250.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_shepp_logan_L_0.250.png  used on input line 28.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_cosine_L_0.500.png, id=35, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_cosine_L_0.500.png, id=113, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_cosine_L_0.500.png Graphic file (type png)
 <use ../q2/output_filtered/recon_cosine_L_0.500.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_cosine_L_0.500.png  used on input line 35.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_cosine_L_0.250.png, id=36, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_cosine_L_0.250.png, id=114, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_cosine_L_0.250.png Graphic file (type png)
 <use ../q2/output_filtered/recon_cosine_L_0.250.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_cosine_L_0.250.png  used on input line 36.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-) (./q3/q3.tex
-<../q3/image1.png, id=37, 266.6763pt x 266.6763pt>
+ [6]) (./q3/q3.tex
+<../q3/image1.png, id=122, 266.6763pt x 266.6763pt>
 File: ../q3/image1.png Graphic file (type png)
 <use ../q3/image1.png>
 Package pdftex.def Info: ../q3/image1.png  used on input line 4.
 (pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
-<../q3/image2.png, id=38, 266.6763pt x 266.6763pt>
+<../q3/image2.png, id=123, 266.6763pt x 266.6763pt>
 File: ../q3/image2.png Graphic file (type png)
 <use ../q3/image2.png>
 Package pdftex.def Info: ../q3/image2.png  used on input line 9.
 (pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
- [1 <../q1/output/radon_transform_delta_s_0.5.png> <../q1/output/radon_transform_delta_s_1.png> <../q1/output/radon_transform_delta_s_3.png> <../q2/output_filtered/recon_no_filter.png> <../q2/output_filtered/recon_ram_lak_L_0.500.png> <../q2/output_filtered/recon_ram_lak_L_0.250.png>] [2 <../q1/output/radon_transform_delta_s_0.1.png> <../q1/output/radon_transform_delta_s_10.png> <../q1/output_delta_t/radon_transform_delta_t_0.1.png> <../q1/output_delta_t/radon_transform_delta_t_0.5.png> <../q1/output_delta_t/radon_transform_delta_t_2.5.png> <../q1/output_delta_t/radon_transform_delta_t_5.png> <../q1/output_delta_theta/radon_transform_delta_theta_0.1.png> <../q1/output_delta_theta/radon_transform_delta_theta_0.5.png> <../q1/output_delta_theta/radon_transform_delta_theta_2.5.png> <../q1/output_delta_theta/radon_transform_delta_theta_5.png>] [3 <../q2/output_filtered/recon_shepp_logan_L_0.500.png> <../q2/output_filtered/recon_shepp_logan_L_0.250.png> <../q2/output_filtered/recon_cosine_L_0.500.png> <../q2/output_filtered/recon_cosine_L_0.250.png>]
-<../q3/rrmse_image_1.png, id=81, 414.1071pt x 297.7524pt>
+ [7 <../q2/output_filtered/recon_no_filter.png> <../q2/output_filtered/recon_ram_lak_L_0.500.png> <../q2/output_filtered/recon_ram_lak_L_0.250.png>] [8 <../q2/output_filtered/recon_shepp_logan_L_0.500.png> <../q2/output_filtered/recon_shepp_logan_L_0.250.png> <../q2/output_filtered/recon_cosine_L_0.500.png> <../q2/output_filtered/recon_cosine_L_0.250.png>]
+<../q3/rrmse_image_1.png, id=141, 414.1071pt x 297.7524pt>
 File: ../q3/rrmse_image_1.png Graphic file (type png)
 <use ../q3/rrmse_image_1.png>
 Package pdftex.def Info: ../q3/rrmse_image_1.png  used on input line 14.
 (pdftex.def)             Requested size: 215.90616pt x 155.24557pt.
-<../q3/rrmse_image_2.png, id=82, 401.8212pt x 297.7524pt>
+<../q3/rrmse_image_2.png, id=142, 401.8212pt x 297.7524pt>
 File: ../q3/rrmse_image_2.png Graphic file (type png)
 <use ../q3/rrmse_image_2.png>
 Package pdftex.def Info: ../q3/rrmse_image_2.png  used on input line 19.
 (pdftex.def)             Requested size: 215.90616pt x 159.98882pt.
- [4 <../q3/image1.png> <../q3/image2.png>]
-<../q3/optimal_reconstruction_image_1.png, id=92, 266.6763pt x 266.6763pt>
+ [9 <../q3/image1.png> <../q3/image2.png>]
+<../q3/optimal_reconstruction_image_1.png, id=151, 266.6763pt x 266.6763pt>
 File: ../q3/optimal_reconstruction_image_1.png Graphic file (type png)
 <use ../q3/optimal_reconstruction_image_1.png>
 Package pdftex.def Info: ../q3/optimal_reconstruction_image_1.png  used on input line 25.
 (pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
-<../q3/optimal_reconstruction_image_2.png, id=93, 266.6763pt x 266.6763pt>
+<../q3/optimal_reconstruction_image_2.png, id=152, 266.6763pt x 266.6763pt>
 File: ../q3/optimal_reconstruction_image_2.png Graphic file (type png)
 <use ../q3/optimal_reconstruction_image_2.png>
 Package pdftex.def Info: ../q3/optimal_reconstruction_image_2.png  used on input line 30.
 (pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
- [5 <../q3/rrmse_image_1.png> <../q3/rrmse_image_2.png>]) (./q4/q4.tex
-./q4/q4.tex:4: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.4 ...3\textwidth]{../q4/rrmse_plot_lambda_1.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:4: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.4 ...3\textwidth]{../q4/rrmse_plot_lambda_1.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:4: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 ...3\textwidth]{../q4/rrmse_plot_lambda_1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../q4/rrmse_plot_lambda_1.png, id=102, 401.8212pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_1.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_1.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_1.png  used on input line 4.
-(pdftex.def)             Requested size: 401.8202pt x 297.75166pt.
-./q4/q4.tex:5: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.5 ...3\textwidth]{../q4/rrmse_plot_lambda_2.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:5: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.5 ...3\textwidth]{../q4/rrmse_plot_lambda_2.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:5: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 ...3\textwidth]{../q4/rrmse_plot_lambda_2.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<../q4/rrmse_plot_lambda_2.png, id=103, 462.528pt x 346.896pt>
-File: ../q4/rrmse_plot_lambda_2.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_2.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_2.png  used on input line 5.
-(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
-./q4/q4.tex:6: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.6 ...3\textwidth]{../q4/rrmse_plot_lambda_3.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:6: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.6 ...3\textwidth]{../q4/rrmse_plot_lambda_3.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:6: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ...3\textwidth]{../q4/rrmse_plot_lambda_3.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_3.png' not found on input line 6.
-
-
-./q4/q4.tex:6: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_3.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ...3\textwidth]{../q4/rrmse_plot_lambda_3.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:7: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.7 ...3\textwidth]{../q4/rrmse_plot_lambda_4.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:7: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.7 ...3\textwidth]{../q4/rrmse_plot_lambda_4.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:7: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...3\textwidth]{../q4/rrmse_plot_lambda_4.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_4.png' not found on input line 7.
-
-
-./q4/q4.tex:7: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_4.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...3\textwidth]{../q4/rrmse_plot_lambda_4.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:8: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.8 ...3\textwidth]{../q4/rrmse_plot_lambda_5.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:8: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.8 ...3\textwidth]{../q4/rrmse_plot_lambda_5.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:8: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...3\textwidth]{../q4/rrmse_plot_lambda_5.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_5.png' not found on input line 8.
-
-
-./q4/q4.tex:8: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_5.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...3\textwidth]{../q4/rrmse_plot_lambda_5.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:9: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.9 ...3\textwidth]{../q4/rrmse_plot_lambda_6.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:9: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.9 ...3\textwidth]{../q4/rrmse_plot_lambda_6.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:9: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...3\textwidth]{../q4/rrmse_plot_lambda_6.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_6.png' not found on input line 9.
-
-
-./q4/q4.tex:9: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_6.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...3\textwidth]{../q4/rrmse_plot_lambda_6.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:10: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.10 ...\textwidth]{../q4/rrmse_plot_lambda_7.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:10: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.10 ...\textwidth]{../q4/rrmse_plot_lambda_7.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:10: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ...\textwidth]{../q4/rrmse_plot_lambda_7.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_7.png' not found on input line 10.
-
-
-./q4/q4.tex:10: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_7.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ...\textwidth]{../q4/rrmse_plot_lambda_7.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:11: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.11 ...\textwidth]{../q4/rrmse_plot_lambda_8.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:11: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.11 ...\textwidth]{../q4/rrmse_plot_lambda_8.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:11: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...\textwidth]{../q4/rrmse_plot_lambda_8.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_8.png' not found on input line 11.
-
-
-./q4/q4.tex:11: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_8.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...\textwidth]{../q4/rrmse_plot_lambda_8.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:12: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.12 ...\textwidth]{../q4/rrmse_plot_lambda_9.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:12: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.12 ...\textwidth]{../q4/rrmse_plot_lambda_9.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:12: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...\textwidth]{../q4/rrmse_plot_lambda_9.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_9.png' not found on input line 12.
-
-
-./q4/q4.tex:12: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_9.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...\textwidth]{../q4/rrmse_plot_lambda_9.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./q4/q4.tex:13: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.13 ...textwidth]{../q4/rrmse_plot_lambda_10.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./q4/q4.tex:13: Undefined control sequence.
-\@tempa ->\width 
-                 
-l.13 ...textwidth]{../q4/rrmse_plot_lambda_10.png}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./q4/q4.tex:13: Package keyval Error:  undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 ...textwidth]{../q4/rrmse_plot_lambda_10.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../q4/rrmse_plot_lambda_10.png' not found on input line 13.
-
-
-./q4/q4.tex:13: Package pdftex.def Error: File `../q4/rrmse_plot_lambda_10.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 ...textwidth]{../q4/rrmse_plot_lambda_10.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (30.71454pt too wide) in paragraph at lines 4--14
- [] 
- []
-
-) [6 <../q3/optimal_reconstruction_image_1.png> <../q3/optimal_reconstruction_image_2.png>]
-Overfull \vbox (156.61417pt too high) has occurred while \output is active []
-
- [7 <../q4/rrmse_plot_lambda_1.png> <../q4/rrmse_plot_lambda_2.png>] (./main.aux)
+ [10 <../q3/rrmse_image_1.png> <../q3/rrmse_image_2.png>]) (./q4/q4.tex) [11 <../q3/optimal_reconstruction_image_1.png> <../q3/optimal_reconstruction_image_2.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8B34B94B9C5608B9F697CD06D185FDED;288.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: FCE8B4E9F8D05CF5A94551B7CDB0A9FF;534.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31995 strings out of 474222
- 650325 string characters out of 5748733
- 1934975 words of memory out of 5000000
- 53802 multiletter control sequences out of 15000+600000
- 566146 words of font info for 68 fonts, out of 8000000 for 9000
+ 31801 strings out of 474222
+ 642204 string characters out of 5748733
+ 1936975 words of memory out of 5000000
+ 53580 multiletter control sequences out of 15000+600000
+ 566957 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,93p,744b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (8 pages, 1975592 bytes).
+ 84i,12n,93p,751b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (12 pages, 1868794 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

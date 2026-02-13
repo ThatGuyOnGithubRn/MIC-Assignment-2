@@ -48,6 +48,68 @@ def myXrayCTRadonTransform(f,delta_t,delta_theta,delta_s):
             radon_transform[i, j] = myXrayIntegration(f,t,theta,delta_s=delta_s)
     return radon_transform
 
+def part_c_compare_delta_s(phantom, delta_t=5, delta_theta=5):
+
+    delta_s_values = [0.5, 1, 3]
+
+    if not os.path.exists('./output_part_c'):
+        os.makedirs('./output_part_c')
+
+    for delta_s in delta_s_values:
+
+        print(f"Processing Δs = {delta_s}")
+
+        # --- Compute Radon Transform ---
+        radon_transform = myXrayCTRadonTransform(
+            phantom,
+            delta_t=delta_t,
+            delta_theta=delta_theta,
+            delta_s=delta_s
+        )
+
+        t_values = np.arange(-90, 95, delta_t)
+        theta_values = np.arange(0, 180, delta_theta)
+
+        # --- Save Sinogram Image ---
+        plt.figure()
+        plt.imshow(radon_transform, extent=(-90, 90, -90, 90), aspect='auto')
+        plt.title(f'Radon Transform (Δs = {delta_s})')
+        plt.xlabel('θ (degrees)')
+        plt.ylabel('t')
+        plt.colorbar()
+        plt.savefig(f'./output_part_c/sinogram_delta_s_{delta_s}.png')
+        plt.clf()
+
+        # --- Extract θ = 0° and 90° ---
+        theta1 = 0
+        theta2 = 90
+
+        idx1 = np.argmin(np.abs(theta_values - theta1))
+        idx2 = np.argmin(np.abs(theta_values - theta2))
+
+        projection1 = radon_transform[:, idx1]
+        projection2 = radon_transform[:, idx2]
+
+        # --- Plot 1D Projection at θ = 0 ---
+        plt.figure()
+        plt.plot(t_values, projection1)
+        plt.title(f'Projection at θ = 0°, Δs = {delta_s}')
+        plt.xlabel('t')
+        plt.ylabel('Projection Value')
+        plt.grid()
+        plt.savefig(f'./output_part_c/projection_theta_0_delta_s_{delta_s}.png')
+        plt.clf()
+
+        # --- Plot 1D Projection at θ = 90 ---
+        plt.figure()
+        plt.plot(t_values, projection2)
+        plt.title(f'Projection at θ = 90°, Δs = {delta_s}')
+        plt.xlabel('t')
+        plt.ylabel('Projection Value')
+        plt.grid()
+        plt.savefig(f'./output_part_c/projection_theta_90_delta_s_{delta_s}.png')
+        plt.clf()
+
 
 
 
@@ -151,6 +213,8 @@ def main():
         '''
         #  NOTE THESE VALUES ARE WORSE DUE TO MORE PIXELS --> fixed in later iterations
         #  NOTE: 0.1 is better than 0.5 now
+    part_c_compare_delta_s(phantom)
+
 
 # ANSER FOR d
 

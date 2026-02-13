@@ -1,64 +1,399 @@
-\section{Question 1}
+% \section{Question 1: X-Ray Computed Tomography – Radon Transform}
+
+% A $128 \times 128$ Shepp–Logan phantom was generated and treated as the image $f(x,y)$. 
+% The coordinate origin was logically placed at the center pixel.
+
+% \subsection*{(a) Implementation of \texttt{myXrayIntegration()}}
+
+% The function \texttt{myXrayIntegration(f, t, theta\_deg, delta\_s)} computes the line integral 
+% of image intensities along a line parameterized by $t$ and $\theta$.
+
+% Implementation details:
+
+% \begin{itemize}
+% \item The angle \texttt{theta\_deg} is converted to radians.
+% \item A sampling variable \texttt{s} is created from $-N$ to $N$ with step size \texttt{delta\_s}.
+% \item For each value of \texttt{s}, corresponding $(x,y)$ coordinates are computed.
+% \item \texttt{map\_coordinates()} is used to interpolate image values.
+% \item The interpolated values are summed and multiplied by \texttt{delta\_s}.
+% \end{itemize}
+
+% \paragraph{Choice of $\Delta s$:}
+
+% Different values were tested: $0.1, 0.5, 1, 3, 10$ pixel units.
+
+% Observations:
+
+% \begin{itemize}
+% \item Very small $\Delta s$ increases computation with little improvement.
+% \item $\Delta s = 0.5$ or $1$ gives stable and smooth results.
+% \item Large $\Delta s$ (3 or 10) causes rough and blocky sinograms.
+% \end{itemize}
+
+% \paragraph{Interpolation Scheme:}
+
+% Bilinear interpolation (\texttt{order=1}) was used because:
+
+% \begin{itemize}
+% \item It provides smooth transitions between pixels.
+% \item Nearest-neighbor interpolation produces jagged artifacts.
+% \item Higher-order interpolation increases computation unnecessarily.
+% \end{itemize}
+
+% \subsection*{(b) Implementation of \texttt{myXrayCTRadonTransform()}}
+
+% The function \texttt{myXrayCTRadonTransform()} computes the Radon transform 
+% over discrete values:
+
+% \begin{itemize}
+% \item \texttt{t = -90 to 90} with step size $\Delta t = 5$
+% \item \texttt{theta = 0 to 175} with step size $\Delta \theta = 5$
+% \end{itemize}
+
+% For every $(t, \theta)$ pair, the function calls \texttt{myXrayIntegration()} 
+% and stores the result in a 2D array.
+
+% \subsection*{(c) Comparison of Different $\Delta s$ Values}
+
+% Radon transforms were generated for:
+
+% \begin{itemize}
+% \item $\Delta s = 0.5$
+% \item $\Delta s = 1$
+% \item $\Delta s = 3$
+% \end{itemize}
+
+% Additionally, 1D plots of the sinogram values were examined for:
+
+% \begin{itemize}
+% \item $\theta = 0^\circ$
+% \item $\theta = 90^\circ$
+% \end{itemize}
+
+% Observations:
+
+% \begin{itemize}
+% \item Smaller $\Delta s$ produces smoother 1D curves.
+% \item Larger $\Delta s$ produces visible roughness due to coarse sampling.
+% \item Among the tested values, $\Delta s = 0.5$ appears smoothest.
+% \end{itemize}
+
+% A smoothness score was computed using the function \texttt{apply\_prior()}, 
+% which evaluates local intensity differences. Lower values indicate smoother sinograms.
+
+% Results show:
+
+% \begin{itemize}
+% \item $\Delta s = 0.5$ gives the lowest smoothness score.
+% \item $\Delta s = 3$ and $10$ significantly increase roughness.
+% \end{itemize}
+
+% \subsection*{(d) Choice of $\Delta t$ and $\Delta \theta$ in Scanner Design}
+
+% \paragraph{$\Delta \theta$:}
+
+% \begin{itemize}
+% \item Smaller $\Delta \theta$ improves angular resolution.
+% \item Too small increases radiation exposure and scan time.
+% \item A moderate small value is preferred.
+% \end{itemize}
+
+% \paragraph{$\Delta t$:}
+
+% \begin{itemize}
+% \item Smaller $\Delta t$ improves spatial sampling.
+% \item Very small $\Delta t$ increases noise sensitivity.
+% \item Larger $\Delta t$ introduces discretization artifacts.
+% \end{itemize}
+
+% Thus, both parameters must balance resolution, noise, and acquisition cost.
+
+% \subsection*{(e) Design Considerations for ART Reconstruction}
+
+% \paragraph{Number of Pixels and Pixel Size:}
+
+% \begin{itemize}
+% \item More pixels improve spatial resolution.
+% \item However, computational cost increases significantly.
+% \item Smaller pixels receive fewer photons, increasing noise variance.
+% \end{itemize}
+
+% A moderate grid resolution is therefore preferred.
+
+% \paragraph{Effect of $\Delta s$:}
+
+% \begin{itemize}
+% \item $\Delta s \ll 1$ pixel width:
+%     \begin{itemize}
+%     \item More accurate integration.
+%     \item Higher computational cost.
+%     \item Minimal improvement beyond a certain point.
+%     \end{itemize}
+% \item $\Delta s \gg 1$ pixel width:
+%     \begin{itemize}
+%     \item Underestimates line integrals.
+%     \item Produces blocky reconstruction.
+%     \item Slows ART convergence.
+%     \end{itemize}
+% \end{itemize}
+
+% \subsection*{Summary}
+
+% The experiments demonstrate that:
+
+% \begin{itemize}
+% \item $\Delta s$ should be comparable to pixel width.
+% \item $\Delta t$ and $\Delta \theta$ should be small but not excessively small.
+% \item There is a trade-off between resolution, noise sensitivity, radiation dose, and computational complexity.
+% \end{itemize}
+
+
+
+
+
+\section{Question 1: X-Ray Computed Tomography – Radon Transform}
+
+A $128 \times 128$ Shepp–Logan phantom was generated and treated as the image $f(x,y)$. 
+The coordinate origin was logically placed at the center pixel.
+
+\subsection*{(a) Implementation of \texttt{myXrayIntegration()}}
+
+The function \texttt{myXrayIntegration(f, t, theta\_deg, delta\_s)} computes the line integral 
+of image intensities along a line parameterized by $t$ and $\theta$.
+
+Implementation details:
+
+\begin{itemize}
+\item The angle \texttt{theta\_deg} is converted to radians.
+\item A sampling variable \texttt{s} is created from $-N$ to $N$ with step size \texttt{delta\_s}.
+\item For each value of \texttt{s}, corresponding $(x,y)$ coordinates are computed.
+\item \texttt{map\_coordinates()} is used to interpolate image values.
+\item The interpolated values are summed and multiplied by \texttt{delta\_s}.
+\end{itemize}
+
+
+    % Log prior to calc smoothness... 0.1
+    % 0.007664408181411028
+    % Log prior to calc smoothness... 0.5
+    % 0.007663613111978756
+    % Log prior to calc smoothness... 1
+    % 0.007665728259402043
+    % Log prior to calc smoothness... 3
+    % 0.007924217046504343
+    % Log prior to calc smoothness... 10
+    % 0.013104456194064591
+% smoothness score to bne kept upto 8 digits after decimal only
+
+\paragraph{Interpolation Scheme:}
+
+Bilinear interpolation (\texttt{order=1}) was used because:
+
+\begin{itemize}
+\item It provides smooth transitions between pixels.
+\item Nearest-neighbor interpolation produces jagged artifacts.
+\item Higher-order interpolation increases computation unnecessarily.
+\end{itemize}
+
+\subsection*{(b) Implementation of \texttt{myXrayCTRadonTransform()}}
+
+The function \texttt{myXrayCTRadonTransform()} computes the Radon transform 
+over discrete values:
+
+\begin{itemize}
+\item \texttt{t = -90 to 90} with step size $\Delta t = 5$
+\item \texttt{theta = 0 to 175} with step size $\Delta \theta = 5$
+\end{itemize}
+
+For every $(t, \theta)$ pair, the function calls \texttt{myXrayIntegration()} 
+and stores the result in a 2D array.
+
+\subsection*{(c) Comparison of Different $\Delta s$ Values}
+
+\paragraph{Choice of $\Delta s$:}
+
+Different values were tested: $0.1, 0.5, 1, 3, 10$ pixel units.
+
+Observations:
+
+\begin{itemize}
+\item Very small $\Delta s$ increases computation with little improvement.
+\item Infact $\Delta s = 0.1$ performed worse than $\Delta s = 0.5$.
+\item This is due to overfitting by interpolation.
+\item $\Delta s = 0.5$ or $1$ gives stable and smooth results.
+\item Large $\Delta s$ (3 or 10) causes rough and blocky sinograms.
+\end{itemize}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+$\Delta s$ & Smoothness Score \\
+\hline
+0.1 & 0.00766441 \\
+0.5 & 0.00766361 \\
+1 & 0.00766573 \\
+3 & 0.00792422 \\
+10 & 0.01310446 \\
+\hline
+\end{tabular}
+\caption{Smoothness scores for different $\Delta s$ values.}
+\end{table}
+
 
 \begin{figure}[H]
 \centering
+\begin{tabular}{c c}
 
-% --- Row 2: Delta s variations ---
-\begin{tabular}{ccc}
-\includegraphics[width=0.3\textwidth]{../q1/output/radon_transform_delta_s_0.5.png} &
-\includegraphics[width=0.3\textwidth]{../q1/output/radon_transform_delta_s_1.png} &
-\includegraphics[width=0.3\textwidth]{../q1/output/radon_transform_delta_s_3.png} \\
-$\Delta s = 0.5$ & $\Delta s = 1$ & $\Delta s = 3$
+$\Delta s = 0.5$ &
+\includegraphics[width=0.5\textwidth]{./../q1/output/radon_transform_delta_s_0.5.png} \\[0.6cm]
+
+$\Delta s = 1$ &
+\includegraphics[width=0.5\textwidth]{./../q1/output/radon_transform_delta_s_1.png} \\[0.6cm]
+
+$\Delta s = 3$ &
+\includegraphics[width=0.5\textwidth]{./../q1/output/radon_transform_delta_s_3.png} \\
+
 \end{tabular}
-
-\vspace{0.5cm}
 \end{figure}
 
-\begin{figure}[p]
+
+
+Additionally, 1D plots of the sinogram values were examined for:
+
+\subsubsection*{1D Projection Comparisons for Different $\Delta s$}
+
+\begin{figure}[H]
 \centering
+\begin{tabular}{c c c}
 
-% --- Row 3: more Delta s ---
-\begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{../q1/output/radon_transform_delta_s_0.1.png} &
-\includegraphics[width=0.45\textwidth]{../q1/output/radon_transform_delta_s_10.png} \\
-$\Delta s = 3$ & $\Delta s = 10$
+$\Delta s$ & $\theta = 0^\circ$ & $\theta = 90^\circ$ \\[0.4cm]
+
+0.5 &
+\includegraphics[width=0.32\textwidth]{./../q1/output_part_c/projection_theta_0_delta_s_0.5.png} &
+\includegraphics[width=0.32\textwidth]{./../q1/output_part_c/projection_theta_90_delta_s_0.5.png} \\[0.6cm]
+
+1 &
+\includegraphics[width=0.32\textwidth]{./../q1/output_part_c/projection_theta_0_delta_s_1.png} &
+\includegraphics[width=0.32\textwidth]{./../q1/output_part_c/projection_theta_90_delta_s_1.png} \\[0.6cm]
+
+3 &
+\includegraphics[width=0.32\textwidth]{./../q1/output_part_c/projection_theta_0_delta_s_3.png} &
+\includegraphics[width=0.32\textwidth]{./../q1/output_part_c/projection_theta_90_delta_s_3.png} \\
+
 \end{tabular}
-
-\vspace{0.5cm}
-
-% --- Row 4: Delta t comparison ---
-\begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_t/radon_transform_delta_t_0.1.png} &
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_t/radon_transform_delta_t_0.5.png} \\
-$\Delta t = 0.1$ & $\Delta t = 0.5$
-\end{tabular}
-
-\vspace{0.5cm}
-
-% --- Row 5: Larger Delta t ---
-\begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_t/radon_transform_delta_t_2.5.png} &
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_t/radon_transform_delta_t_5.png} \\
-$\Delta t = 2.5$ & $\Delta t = 5$
-\end{tabular}
-
-\vspace{0.5cm}
-
-% --- Row 6: Delta theta comparison ---
-\begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_theta/radon_transform_delta_theta_0.1.png} &
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_theta/radon_transform_delta_theta_0.5.png} \\
-$\Delta \theta = 0.1$ & $\Delta \theta = 0.5$
-\end{tabular}
-
-\vspace{0.5cm}
-
-% --- Row 7: Larger Delta theta ---
-\begin{tabular}{cc}
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_theta/radon_transform_delta_theta_2.5.png} &
-\includegraphics[width=0.45\textwidth]{../q1/output_delta_theta/radon_transform_delta_theta_5.png} \\
-$\Delta \theta = 2.5$ & $\Delta \theta = 5$
-\end{tabular}
-
-\caption{Comparison of Radon transforms for different sampling parameters: integration step ($\Delta s$), detector spacing ($\Delta t$), and angular resolution ($\Delta \theta$).}
 \end{figure}
+
+
+Observations:
+
+\begin{itemize}
+\item Smaller $\Delta s$ produces smoother 1D curves.
+\item Larger $\Delta s$ produces visible roughness due to coarse sampling.
+\item Among the tested values, $\Delta s = 0.5$ appears smoothest.
+\end{itemize}
+
+A smoothness score was computed using the function \texttt{apply\_prior()}, 
+which evaluates local intensity differences. Lower values indicate smoother sinograms.
+
+Results show:
+
+\begin{itemize}
+\item $\Delta s = 0.5$ gives the lowest smoothness score.
+\item $\Delta s = 1$ and $3$ give slightly higher scores, indicating more roughness.
+\end{itemize}
+
+
+\subsection*{(d) Choice of $\Delta t$ and $\Delta \theta$ in Scanner Design}
+
+\paragraph{$\Delta \theta$:}
+
+\begin{itemize}
+\item Smaller $\Delta \theta$ improves angular resolution.
+\item Too small increases radiation exposure and scan time.
+\item A moderate small value is preferred.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{c c}
+
+$\Delta \theta = 0.1$ &
+\includegraphics[width=0.45\textwidth]{./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png} \\[0.6cm]
+
+$\Delta \theta = 0.5$ &
+\includegraphics[width=0.45\textwidth]{./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png} \\[0.6cm]
+
+$\Delta \theta = 2.5$ &
+\includegraphics[width=0.45\textwidth]{./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png} \\
+
+\end{tabular}
+\end{figure}
+
+
+\paragraph{$\Delta t$:}
+
+
+
+\begin{itemize}
+\item Smaller $\Delta t$ improves spatial sampling.
+\item Very small $\Delta t$ increases noise sensitivity.
+\item Larger $\Delta t$ introduces discretization artifacts.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{c c}
+
+$\Delta t = 0.1$ &
+\includegraphics[width=0.45\textwidth]{./../q1/output_delta_t/radon_transform_delta_t_0.1.png} \\[0.6cm]
+
+$\Delta t = 0.5$ &
+\includegraphics[width=0.45\textwidth]{./../q1/output_delta_t/radon_transform_delta_t_0.5.png} \\[0.6cm]
+
+$\Delta t = 2.5$ &
+\includegraphics[width=0.45\textwidth]{./../q1/output_delta_t/radon_transform_delta_t_2.5.png} \\
+
+\end{tabular}
+\end{figure}
+
+
+
+Thus, both parameters must balance resolution, noise, and acquisition cost.
+
+\subsection*{(e) Design Considerations for ART Reconstruction}
+
+\paragraph{Number of Pixels and Pixel Size:}
+
+\begin{itemize}
+\item More pixels improve spatial resolution.
+\item However, computational cost increases significantly.
+\item Smaller pixels receive fewer photons, increasing noise variance.
+\end{itemize}
+
+A moderate grid resolution is therefore preferred.
+
+\paragraph{Effect of $\Delta s$:}
+
+\begin{itemize}
+\item $\Delta s \ll 1$ pixel width:
+    \begin{itemize}
+    \item More accurate integration.
+    \item Higher computational cost.
+    \item Minimal improvement beyond a certain point.
+    \end{itemize}
+\item $\Delta s \gg 1$ pixel width:
+    \begin{itemize}
+    \item Underestimates line integrals.
+    \item Produces blocky reconstruction.
+    \item Slows ART convergence.
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Summary}
+
+The experiments demonstrate that:
+
+\begin{itemize}
+\item $\Delta s$ should be comparable to pixel width.
+\item $\Delta t$ and $\Delta \theta$ should be small but not excessively small.
+\item There is a trade-off between resolution, noise sensitivity, radiation dose, and computational complexity.
+\end{itemize}
