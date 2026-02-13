@@ -5,5 +5,7 @@
 \contentsline {paragraph}{$\Delta t$:}{4}{section*.14}%
 \contentsline {paragraph}{Number of Pixels and Pixel Size:}{5}{section*.17}%
 \contentsline {paragraph}{Effect of $\Delta s$:}{6}{section*.18}%
-\contentsline {section}{\numberline {2}Question 2}{7}{section.2}%
+\contentsline {section}{\numberline {2}Question 2: X-Ray Computed Tomography — Reconstruction by Filtered Backprojection (FBP)}{6}{section.2}%
+\contentsline {paragraph}{Observations and Discussion}{7}{section*.23}%
+\contentsline {paragraph}{Influence of the Cutoff Frequency}{9}{section*.24}%
 \contentsline {section}{\numberline {3}Question 3}{9}{section.3}%
