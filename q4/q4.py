@@ -112,8 +112,7 @@ for lr in range(1, 11):
     plt.plot(rrmses)
     plt.xlabel('Iteration')
     plt.ylabel('RRMSE')
-    plt.title('RRMSE vs Iteration')
+    # plt.title('RRMSE vs Iteration')
     plt.grid()
     plt.savefig(f'rrmse_plot_lambda_{lr}.png', bbox_inches='tight', pad_inches=0)
     rrmses = []
-    exit()
