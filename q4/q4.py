@@ -42,9 +42,16 @@ def rrmse(image1, image2):
 def integrate(f, coords):
     return map_coordinates(f, coords, order=1).sum()
 
+def myXrayCTRadonTransform(f,t_values, theta_values, delta_s):
+    radon_transform = np.zeros((len(t_values),len(theta_values)))
+    for i, t in enumerate(t_values):
+        for j, theta in enumerate(theta_values):
+            radon_transform[i, j] = integrate(f, myXrayIntegration(f,t,theta,delta_s=delta_s))
+    return radon_transform
+
 rrmses = []
-def myART(ordered_projections, lr, num_iterations=100):
-    global image1, rrmses
+def myART(ordered_projections, lr, num_iterations=100, min_t=-255):
+    global image1, rrmses, sinogram
     reconstructed_image = np.zeros(image1.shape)
     num_projections = ordered_projections.shape[0]
     for iteration in range(num_iterations):
@@ -53,7 +60,7 @@ def myART(ordered_projections, lr, num_iterations=100):
             t, theta = ordered_projections[i]
             coords = myXrayIntegration(reconstructed_image, t, theta, delta_s=1)
             current_projection = integrate(reconstructed_image, coords)
-            ordered_projection = integrate(image1, coords)
+            ordered_projection = sinogram[int(t-min_t), int(theta)]
             error = ordered_projection - current_projection
             correction = lr * error / len(coords[0])  
             floored = np.floor(coords).astype(int)
@@ -74,8 +81,13 @@ def myART(ordered_projections, lr, num_iterations=100):
             # if len(latest_rrmses) > 100 and max(latest_rrmses[-101:-1]) < latest_rrmses[-1]:
             #     print("Convergence reached at iteration", iteration, "projection", i)
             #     break
-        rrmses.append(rrmse(image1, reconstructed_image))
-        print(f"Iteration {iteration+1}/{num_iterations}, RRMSE: {rrmses[-1]:.6f}")
+        prev_reconstructed_image = reconstructed_image.copy()
+        rrmse_val = rrmse(image1, reconstructed_image)
+        if rrmses and rrmse_val > rrmses[-1]:
+            reconstructed_image = prev_reconstructed_image
+            break
+        rrmses.append(rrmse_val)
+        print(f"Iteration {iteration+1}/{num_iterations}, RRMSE: {rrmse_val:.6f}")
         # lr /= 10
     # with open('reconstructed_image.txt', 'w') as f:
     #     for row in reconstructed_image:
@@ -90,6 +102,8 @@ def myART(ordered_projections, lr, num_iterations=100):
 t = np.arange(-255, 255, 1)
 thetha = np.arange(0, 180, 1)
 coords = np.array(np.meshgrid(t, thetha)).reshape(2, -1).T
+sinogram = myXrayCTRadonTransform(image1, t, thetha, delta_s=1)
+sinogram += np.random.normal(0, 0.05, size=sinogram.shape) * sinogram
 import random
 random.shuffle(coords)
 
