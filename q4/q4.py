@@ -54,6 +54,7 @@ def myART(ordered_projections, lr, num_iterations=100, min_t=-255):
     global image1, rrmses, sinogram
     reconstructed_image = np.zeros(image1.shape)
     num_projections = ordered_projections.shape[0]
+    to_break = False
     for iteration in range(num_iterations):
         latest_rrmses = []
         for i in trange(num_projections):
@@ -68,26 +69,31 @@ def myART(ordered_projections, lr, num_iterations=100, min_t=-255):
             ceiled = np.ceil(coords).astype(int)
             wy = frac[0, :]
             wx = frac[1, :]            
-            reconstructed_image[ceiled[0], ceiled[1]] += correction * (1 - wy) * (1 - wx)
-            reconstructed_image[floored[0], ceiled[1]] += correction * wy * (1 - wx)
-            reconstructed_image[ceiled[0], floored[1]] += correction * (1 - wy) * wx
-            reconstructed_image[floored[0], floored[1]] += correction * wy * wx
-            np.clip(reconstructed_image, 0, 1, out=reconstructed_image)
-            # latest_rrmses.append(rrmses[-1])
-            # print(i, rrmses[-1])
+            reconstructed_image[ceiled[0], ceiled[1]] += correction * wy * wx
+            reconstructed_image[floored[0], ceiled[1]] += correction * (1-wy) * wx
+            reconstructed_image[ceiled[0], floored[1]] += correction * wy * (1-wx)
+            reconstructed_image[floored[0], floored[1]] += correction * (1-wy) * (1-wx)
+            np.clip(reconstructed_image, 0, np.inf, out=reconstructed_image)
+            # rrmse_val = rrmse(image1, reconstructed_image)
+            # latest_rrmses.append(rrmse_val)
+            # print(i, rrmse_val)
             # # if len(latest_rrmses) > 100 and max(latest_rrmses[-101:-1]) - min(latest_rrmses[-101:-1]) < 1e-5:
             # #     print("Convergence reached at iteration", iteration, "projection", i)
             # #     break
             # if len(latest_rrmses) > 100 and max(latest_rrmses[-101:-1]) < latest_rrmses[-1]:
             #     print("Convergence reached at iteration", iteration, "projection", i)
             #     break
-        prev_reconstructed_image = reconstructed_image.copy()
-        rrmse_val = rrmse(image1, reconstructed_image)
-        if rrmses and rrmse_val > rrmses[-1]:
-            reconstructed_image = prev_reconstructed_image
+            if i%10000 == 0:
+                prev_reconstructed_image = reconstructed_image.copy()
+                rrmse_val = rrmse(image1, reconstructed_image)
+                if rrmses and rrmse_val > rrmses[-1]:
+                    reconstructed_image = prev_reconstructed_image
+                    to_break = True
+                    break
+                rrmses.append(rrmse_val)
+        if to_break:
             break
-        rrmses.append(rrmse_val)
-        print(f"Iteration {iteration+1}/{num_iterations}, RRMSE: {rrmse_val:.6f}")
+            # print(f"Iteration {iteration+1}/{num_iterations}, RRMSE: {rrmse_val:.6f}")
         # lr /= 10
     # with open('reconstructed_image.txt', 'w') as f:
     #     for row in reconstructed_image:
@@ -103,11 +109,13 @@ t = np.arange(-255, 255, 1)
 thetha = np.arange(0, 180, 1)
 coords = np.array(np.meshgrid(t, thetha)).reshape(2, -1).T
 sinogram = myXrayCTRadonTransform(image1, t, thetha, delta_s=1)
-sinogram += np.random.normal(0, 0.05, size=sinogram.shape) * sinogram
+sinogram += np.random.normal(0, 0.05, size=sinogram.shape) * (np.max(sinogram)-np.min(sinogram))
+np.clip(sinogram, 0, np.inf, out=sinogram)
 import random
-random.shuffle(coords)
+np.random.shuffle(coords)
 
 radon_transform = radon(image1, theta=thetha, circle=False)
+# radon_transform += np.random.normal(0, 0.05, size=radon_transform.shape) * (np.max(radon_transform)-np.min(radon_transform))
 iradon_transform = iradon(radon_transform, theta=thetha, circle=False, filter_name=None)
 iradon_transform = (iradon_transform - iradon_transform.min()) / (iradon_transform.max() - iradon_transform.min())
 print(rrmse(iradon_transform, image1))
@@ -115,6 +123,8 @@ plt.imshow(iradon_transform, cmap='gray')
 plt.axis('off')
 plt.savefig('iradon_transform.png', bbox_inches='tight', pad_inches=0)
 plt.close()
+# print(np.max(radon_transform), np.min(radon_transform))
+# exit()
 
 # load the reconstructed image from reconstructed_image_lambda_0.1.txt
 # with open('reconstructed_image.txt', 'r') as f:
@@ -122,7 +132,7 @@ plt.close()
 # print(rrmse(reconstructed_image, image1))
 
 for lr in range(1, 11):
-    myART(coords, lr=lr/10, num_iterations=10)
+    myART(coords, lr=lr/10, num_iterations=3)
     plt.plot(rrmses)
     plt.xlabel('Iteration')
     plt.ylabel('RRMSE')
@@ -130,3 +140,4 @@ for lr in range(1, 11):
     plt.grid()
     plt.savefig(f'rrmse_plot_lambda_{lr}.png', bbox_inches='tight', pad_inches=0)
     rrmses = []
+    
