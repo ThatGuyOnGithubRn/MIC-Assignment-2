@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1771014364.22634 0
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1771014720.56375 0
   "main.bcf" 0 -1 0 "pdflatex"
   "references.bib" 0 -1 0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1771014357.91558 "/home/autizchait/Desktop/SEM6/CS736:MIC/assignmentMathImagingRecon/report/main.tex" "main.pdf" "main" 1771014364.22721 0
+["pdflatex"] 1771014714.40777 "/home/autizchait/Desktop/SEM6/CS736:MIC/assignmentMathImagingRecon/report/main.tex" "main.pdf" "main" 1771014720.56461 0
   "../q1/output/radon_transform_delta_s_0.5.png" 1771013610.061 30426 bc704ab6603169e54fb760d20a8117ff ""
   "../q1/output/radon_transform_delta_s_1.png" 1771013610.355 29978 aa2558c38a81d5347c1d9c7d75bf639d ""
   "../q1/output/radon_transform_delta_s_3.png" 1771013610.691 30121 91f5130b77aa7e000b42a1702e2acaee ""
@@ -221,13 +221,13 @@
   "/usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb" 1636152094 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1771011523.32358 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
-  "main.aux" 1771014363.77666 2502 ad4268ca9644f2037c5c0ba1a1e5edb6 "pdflatex"
+  "main.aux" 1771014720.17556 2502 ad4268ca9644f2037c5c0ba1a1e5edb6 "pdflatex"
   "main.bbl" 0 -1 0 "biber main"
-  "main.out" 1771014363.77866 534 fce8b4e9f8d05cf5a94551b7cdb0a9ff "pdflatex"
-  "main.run.xml" 1771014363.78279 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.out" 1771014720.17656 534 fce8b4e9f8d05cf5a94551b7cdb0a9ff "pdflatex"
+  "main.run.xml" 1771014720.18001 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
   "main.tex" 1771014234.52281 1273 e52295e6a13abef50465c884e27798e5 ""
-  "main.toc" 1771014363.78279 636 f3b2aff717ce998e84be28f435dd4301 "pdflatex"
-  "q1/q1.tex" 1771014351.31374 12432 faa5a52a1ae5cb5a19efe0a2c8437ed9 ""
+  "main.toc" 1771014720.18001 636 f3b2aff717ce998e84be28f435dd4301 "pdflatex"
+  "q1/q1.tex" 1771014714.03454 12439 dec43721808187399865c6755584fc4b ""
   "q2/q2.tex" 1771006006.96457 1285 73e232a922ea3cbb23c9b29c10d92168 ""
   "q3/q3.tex" 1771006006.96457 1109 e4443fb21e84fdd73465b41bb86a5c5e ""
   "q4/q4.tex" 1771012020.39477 967 457ebd55933c005900b8b3231f414101 ""
