@@ -59,6 +59,7 @@ plt.axis('off')
 plt.savefig('full_degree_recon2.png', bbox_inches='tight', pad_inches=0)
 plt.close()
 
+exit()
 for i, image in enumerate([image1, image2]):
     min_rrmse = float('inf')
     argmin_rrmse = None
