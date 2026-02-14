@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.13)  14 FEB 2026 02:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.13)  14 FEB 2026 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -842,271 +842,111 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./q1/q1.tex
-<../q1/output/radon_transform_delta_s_0.5.png, id=37, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_0.5.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_0.5.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_0.5.png  used on input line 8.
-(pdftex.def)             Requested size: 129.545pt x 97.15668pt.
-<../q1/output/radon_transform_delta_s_1.png, id=39, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_1.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_1.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_1.png  used on input line 9.
-(pdftex.def)             Requested size: 129.545pt x 97.15668pt.
-<../q1/output/radon_transform_delta_s_3.png, id=40, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_3.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_3.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_3.png  used on input line 10.
-(pdftex.def)             Requested size: 129.545pt x 97.15668pt.
-<../q1/output/radon_transform_delta_s_0.1.png, id=41, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_0.1.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_0.1.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_0.1.png  used on input line 22.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output/radon_transform_delta_s_10.png, id=42, 462.528pt x 346.896pt>
-File: ../q1/output/radon_transform_delta_s_10.png Graphic file (type png)
-<use ../q1/output/radon_transform_delta_s_10.png>
-Package pdftex.def Info: ../q1/output/radon_transform_delta_s_10.png  used on input line 23.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_0.1.png, id=43, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_0.1.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_0.1.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_0.1.png  used on input line 31.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_0.5.png, id=44, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_0.5.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_0.5.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_0.5.png  used on input line 32.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_2.5.png, id=45, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_2.5.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_2.5.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_2.5.png  used on input line 40.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_t/radon_transform_delta_t_5.png, id=46, 462.528pt x 346.896pt>
-File: ../q1/output_delta_t/radon_transform_delta_t_5.png Graphic file (type png)
-<use ../q1/output_delta_t/radon_transform_delta_t_5.png>
-Package pdftex.def Info: ../q1/output_delta_t/radon_transform_delta_t_5.png  used on input line 41.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_0.1.png, id=47, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_0.1.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_0.1.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_0.1.png  used on input line 49.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_0.5.png, id=48, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_0.5.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_0.5.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_0.5.png  used on input line 50.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_2.5.png, id=49, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_2.5.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_2.5.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_2.5.png  used on input line 58.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
-<../q1/output_delta_theta/radon_transform_delta_theta_5.png, id=50, 462.528pt x 346.896pt>
-File: ../q1/output_delta_theta/radon_transform_delta_theta_5.png Graphic file (type png)
-<use ../q1/output_delta_theta/radon_transform_delta_theta_5.png>
-Package pdftex.def Info: ../q1/output_delta_theta/radon_transform_delta_theta_5.png  used on input line 59.
-(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+Overfull \hbox (3.18387pt too wide) in paragraph at lines 154--154
+[]\OT1/cmr/bx/n/14.4 Question 1: X-Ray Com-puted To-mog-ra-phy { Radon Trans-
+ []
 
-
-LaTeX Warning: Float too large for page by 244.0213pt on input line 64.
-
-) (./q2/q2.tex
-<../q2/output_filtered/recon_no_filter.png, id=51, 266.6763pt x 266.6763pt>
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 159.
+<./../q1/output/radon_transform_delta_s_0.5.png, id=37, 462.528pt x 346.896pt>
+File: ./../q1/output/radon_transform_delta_s_0.5.png Graphic file (type png)
+<use ./../q1/output/radon_transform_delta_s_0.5.png>
+Package pdftex.def Info: ./../q1/output/radon_transform_delta_s_0.5.png  used on input line 247.
+(pdftex.def)             Requested size: 215.90616pt x 161.92957pt.
+<./../q1/output/radon_transform_delta_s_1.png, id=39, 462.528pt x 346.896pt>
+File: ./../q1/output/radon_transform_delta_s_1.png Graphic file (type png)
+<use ./../q1/output/radon_transform_delta_s_1.png>
+Package pdftex.def Info: ./../q1/output/radon_transform_delta_s_1.png  used on input line 250.
+(pdftex.def)             Requested size: 215.90616pt x 161.92957pt.
+<./../q1/output/radon_transform_delta_s_3.png, id=40, 462.528pt x 346.896pt>
+File: ./../q1/output/radon_transform_delta_s_3.png Graphic file (type png)
+<use ./../q1/output/radon_transform_delta_s_3.png>
+Package pdftex.def Info: ./../q1/output/radon_transform_delta_s_3.png  used on input line 253.
+(pdftex.def)             Requested size: 215.90616pt x 161.92957pt.
+[1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2 <./../q1/output/radon_transform_delta_s_0.5.png> <./../q1/output/radon_transform_delta_s_1.png> <./../q1/output/radon_transform_delta_s_3.png>]
+<./../q1/output_part_c/projection_theta_0_delta_s_0.5.png, id=67, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_0_delta_s_0.5.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_0_delta_s_0.5.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_0_delta_s_0.5.png  used on input line 271.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_90_delta_s_0.5.png, id=68, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_90_delta_s_0.5.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_90_delta_s_0.5.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_90_delta_s_0.5.png  used on input line 272.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_0_delta_s_1.png, id=69, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_0_delta_s_1.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_0_delta_s_1.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_0_delta_s_1.png  used on input line 275.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_90_delta_s_1.png, id=70, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_90_delta_s_1.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_90_delta_s_1.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_90_delta_s_1.png  used on input line 276.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_0_delta_s_3.png, id=71, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_0_delta_s_3.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_0_delta_s_3.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_0_delta_s_3.png  used on input line 279.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+<./../q1/output_part_c/projection_theta_90_delta_s_3.png, id=72, 462.528pt x 346.896pt>
+File: ./../q1/output_part_c/projection_theta_90_delta_s_3.png Graphic file (type png)
+<use ./../q1/output_part_c/projection_theta_90_delta_s_3.png>
+Package pdftex.def Info: ./../q1/output_part_c/projection_theta_90_delta_s_3.png  used on input line 280.
+(pdftex.def)             Requested size: 138.18309pt x 103.63554pt.
+ [3 <./../q1/output_part_c/projection_theta_0_delta_s_0.5.png> <./../q1/output_part_c/projection_theta_90_delta_s_0.5.png> <./../q1/output_part_c/projection_theta_0_delta_s_1.png> <./../q1/output_part_c/projection_theta_90_delta_s_1.png> <./../q1/output_part_c/projection_theta_0_delta_s_3.png> <./../q1/output_part_c/projection_theta_90_delta_s_3.png>]
+<./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png, id=86, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png Graphic file (type png)
+<use ./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png>
+Package pdftex.def Info: ./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png  used on input line 320.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png, id=87, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png Graphic file (type png)
+<use ./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png>
+Package pdftex.def Info: ./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png  used on input line 323.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png, id=88, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png Graphic file (type png)
+<use ./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png>
+Package pdftex.def Info: ./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png  used on input line 326.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_t/radon_transform_delta_t_0.1.png, id=89, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_t/radon_transform_delta_t_0.1.png Graphic file (type png)
+<use ./../q1/output_delta_t/radon_transform_delta_t_0.1.png>
+Package pdftex.def Info: ./../q1/output_delta_t/radon_transform_delta_t_0.1.png  used on input line 347.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_t/radon_transform_delta_t_0.5.png, id=90, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_t/radon_transform_delta_t_0.5.png Graphic file (type png)
+<use ./../q1/output_delta_t/radon_transform_delta_t_0.5.png>
+Package pdftex.def Info: ./../q1/output_delta_t/radon_transform_delta_t_0.5.png  used on input line 350.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+<./../q1/output_delta_t/radon_transform_delta_t_2.5.png, id=91, 462.528pt x 346.896pt>
+File: ./../q1/output_delta_t/radon_transform_delta_t_2.5.png Graphic file (type png)
+<use ./../q1/output_delta_t/radon_transform_delta_t_2.5.png>
+Package pdftex.def Info: ./../q1/output_delta_t/radon_transform_delta_t_2.5.png  used on input line 353.
+(pdftex.def)             Requested size: 194.31422pt x 145.73766pt.
+ [4 <./../q1/output_delta_theta/radon_transform_delta_theta_0.1.png> <./../q1/output_delta_theta/radon_transform_delta_theta_0.5.png> <./../q1/output_delta_theta/radon_transform_delta_theta_2.5.png>] [5 <./../q1/output_delta_t/radon_transform_delta_t_0.1.png> <./../q1/output_delta_t/radon_transform_delta_t_0.5.png> <./../q1/output_delta_t/radon_transform_delta_t_2.5.png>]) (./q2/q2.tex
+<../q2/output_filtered/recon_no_filter.png, id=113, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_no_filter.png Graphic file (type png)
 <use ../q2/output_filtered/recon_no_filter.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_no_filter.png  used on input line 7.
 (pdftex.def)             Requested size: 151.13693pt x 151.13626pt.
-<../q2/output_filtered/recon_ram_lak_L_0.500.png, id=52, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_ram_lak_L_0.500.png, id=114, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_ram_lak_L_0.500.png Graphic file (type png)
 <use ../q2/output_filtered/recon_ram_lak_L_0.500.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_ram_lak_L_0.500.png  used on input line 15.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_ram_lak_L_0.250.png, id=53, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_ram_lak_L_0.250.png, id=115, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_ram_lak_L_0.250.png Graphic file (type png)
 <use ../q2/output_filtered/recon_ram_lak_L_0.250.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_ram_lak_L_0.250.png  used on input line 16.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_shepp_logan_L_0.500.png, id=54, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_shepp_logan_L_0.500.png, id=116, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_shepp_logan_L_0.500.png Graphic file (type png)
 <use ../q2/output_filtered/recon_shepp_logan_L_0.500.png>
 Package pdftex.def Info: ../q2/output_filtered/recon_shepp_logan_L_0.500.png  used on input line 27.
 (pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_shepp_logan_L_0.250.png, id=55, 266.6763pt x 266.6763pt>
+<../q2/output_filtered/recon_shepp_logan_L_0.250.png, id=117, 266.6763pt x 266.6763pt>
 File: ../q2/output_filtered/recon_shepp_logan_L_0.250.png Graphic file (type png)
 <use ../q2/output_filtered/recon_shepp_logan_L_0.250.png>
-Package pdftex.def Info: ../q2/output_filtered/recon_shepp_logan_L_0.250.png  used on input line 28.
-(pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_cosine_L_0.500.png, id=56, 266.6763pt x 266.6763pt>
-File: ../q2/output_filtered/recon_cosine_L_0.500.png Graphic file (type png)
-<use ../q2/output_filtered/recon_cosine_L_0.500.png>
-Package pdftex.def Info: ../q2/output_filtered/recon_cosine_L_0.500.png  used on input line 35.
-(pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-<../q2/output_filtered/recon_cosine_L_0.250.png, id=57, 266.6763pt x 266.6763pt>
-File: ../q2/output_filtered/recon_cosine_L_0.250.png Graphic file (type png)
-<use ../q2/output_filtered/recon_cosine_L_0.250.png>
-Package pdftex.def Info: ../q2/output_filtered/recon_cosine_L_0.250.png  used on input line 36.
-(pdftex.def)             Requested size: 194.31422pt x 194.314pt.
-) (./q3/q3.tex
-<../q3/image1.png, id=58, 266.6763pt x 266.6763pt>
-File: ../q3/image1.png Graphic file (type png)
-<use ../q3/image1.png>
-Package pdftex.def Info: ../q3/image1.png  used on input line 4.
-(pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
-<../q3/image2.png, id=59, 266.6763pt x 266.6763pt>
-File: ../q3/image2.png Graphic file (type png)
-<use ../q3/image2.png>
-Package pdftex.def Info: ../q3/image2.png  used on input line 9.
-(pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
- [1 <../q1/output/radon_transform_delta_s_0.5.png> <../q1/output/radon_transform_delta_s_1.png> <../q1/output/radon_transform_delta_s_3.png> <../q2/output_filtered/recon_no_filter.png> <../q2/output_filtered/recon_ram_lak_L_0.500.png> <../q2/output_filtered/recon_ram_lak_L_0.250.png>] [2 <../q1/output/radon_transform_delta_s_0.1.png> <../q1/output/radon_transform_delta_s_10.png> <../q1/output_delta_t/radon_transform_delta_t_0.1.png> <../q1/output_delta_t/radon_transform_delta_t_0.5.png> <../q1/output_delta_t/radon_transform_delta_t_2.5.png> <../q1/output_delta_t/radon_transform_delta_t_5.png> <../q1/output_delta_theta/radon_transform_delta_theta_0.1.png> <../q1/output_delta_theta/radon_transform_delta_theta_0.5.png> <../q1/output_delta_theta/radon_transform_delta_theta_2.5.png> <../q1/output_delta_theta/radon_transform_delta_theta_5.png>] [3 <../q2/output_filtered/recon_shepp_logan_L_0.500.png> <../q2/output_filtered/recon_shepp_logan_L_0.250.png> <../q2/output_filtered/recon_cosine_L_0.500.png> <../q2/output_filtered/recon_cosine_L_0.250.png>]
-<../q3/rrmse_image_1.png, id=99, 414.1071pt x 297.7524pt>
-File: ../q3/rrmse_image_1.png Graphic file (type png)
-<use ../q3/rrmse_image_1.png>
-Package pdftex.def Info: ../q3/rrmse_image_1.png  used on input line 14.
-(pdftex.def)             Requested size: 215.90616pt x 155.24557pt.
-<../q3/rrmse_image_2.png, id=100, 401.8212pt x 297.7524pt>
-File: ../q3/rrmse_image_2.png Graphic file (type png)
-<use ../q3/rrmse_image_2.png>
-Package pdftex.def Info: ../q3/rrmse_image_2.png  used on input line 19.
-(pdftex.def)             Requested size: 215.90616pt x 159.98882pt.
- [4 <../q3/image1.png> <../q3/image2.png>]
-<../q3/optimal_reconstruction_image_1.png, id=109, 266.6763pt x 266.6763pt>
-File: ../q3/optimal_reconstruction_image_1.png Graphic file (type png)
-<use ../q3/optimal_reconstruction_image_1.png>
-Package pdftex.def Info: ../q3/optimal_reconstruction_image_1.png  used on input line 25.
-(pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
-<../q3/optimal_reconstruction_image_2.png, id=110, 266.6763pt x 266.6763pt>
-File: ../q3/optimal_reconstruction_image_2.png Graphic file (type png)
-<use ../q3/optimal_reconstruction_image_2.png>
-Package pdftex.def Info: ../q3/optimal_reconstruction_image_2.png  used on input line 30.
-(pdftex.def)             Requested size: 215.90616pt x 215.90895pt.
- [5 <../q3/rrmse_image_1.png> <../q3/rrmse_image_2.png>]) (./q4/q4.tex
-<../q4/rrmse_plot_lambda_1.png, id=119, 396.7623pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_1.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_1.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_1.png  used on input line 5.
-(pdftex.def)             Requested size: 129.545pt x 97.21817pt.
-<../q4/rrmse_plot_lambda_2.png, id=120, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_2.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_2.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_2.png  used on input line 10.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_3.png, id=121, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_3.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_3.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_3.png  used on input line 15.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_4.png, id=122, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_4.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_4.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_4.png  used on input line 21.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_5.png, id=123, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_5.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_5.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_5.png  used on input line 26.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
- [6 <../q3/optimal_reconstruction_image_1.png> <../q3/optimal_reconstruction_image_2.png>]
-<../q4/rrmse_plot_lambda_6.png, id=133, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_6.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_6.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_6.png  used on input line 37.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_7.png, id=134, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_7.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_7.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_7.png  used on input line 42.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_8.png, id=135, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_8.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_8.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_8.png  used on input line 47.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_9.png, id=136, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_9.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_9.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_9.png  used on input line 53.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/rrmse_plot_lambda_10.png, id=137, 395.3169pt x 297.7524pt>
-File: ../q4/rrmse_plot_lambda_10.png Graphic file (type png)
-<use ../q4/rrmse_plot_lambda_10.png>
-Package pdftex.def Info: ../q4/rrmse_plot_lambda_10.png  used on input line 58.
-(pdftex.def)             Requested size: 129.545pt x 97.57254pt.
-<../q4/reconstructed_image_lambda_0.1.png, id=138, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.1.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.1.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.1.png  used on input line 69.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.2.png, id=139, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.2.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.2.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.2.png  used on input line 74.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.3.png, id=140, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.3.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.3.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.3.png  used on input line 79.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.4.png, id=141, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.4.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.4.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.4.png  used on input line 85.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.5.png, id=142, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.5.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.5.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.5.png  used on input line 90.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
- [7 <../q4/rrmse_plot_lambda_1.png> <../q4/rrmse_plot_lambda_2.png> <../q4/rrmse_plot_lambda_3.png> <../q4/rrmse_plot_lambda_4.png> <../q4/rrmse_plot_lambda_5.png> <../q4/rrmse_plot_lambda_6.png> <../q4/rrmse_plot_lambda_7.png> <../q4/rrmse_plot_lambda_8.png> <../q4/rrmse_plot_lambda_9.png> <../q4/rrmse_plot_lambda_10.png>]
-<../q4/reconstructed_image_lambda_0.6.png, id=161, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.6.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.6.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.6.png  used on input line 101.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.7.png, id=162, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.7.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.7.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.7.png  used on input line 106.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.8.png, id=163, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.8.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.8.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.8.png  used on input line 111.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_0.9.png, id=164, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_0.9.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_0.9.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_0.9.png  used on input line 117.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
-<../q4/reconstructed_image_lambda_1.0.png, id=165, 266.6763pt x 266.6763pt>
-File: ../q4/reconstructed_image_lambda_1.0.png Graphic file (type png)
-<use ../q4/reconstructed_image_lambda_1.0.png>
-Package pdftex.def Info: ../q4/reconstructed_image_lambda_1.0.png  used on input line 122.
-(pdftex.def)             Requested size: 129.545pt x 129.54536pt.
- [8 <../q4/reconstructed_image_lambda_0.1.png> <../q4/reconstructed_image_lambda_0.2.png> <../q4/reconstructed_image_lambda_0.3.png> <../q4/reconstructed_image_lambda_0.4.png> <../q4/reconstructed_image_lambda_0.5.png>]) [9 <../q4/reconstructed_image_lambda_0.6.png> <../q4/reconstructed_image_lambda_0.7.png> <../q4/reconstructed_image_lambda_0.8.png> <../q4/reconstructed_image_lambda_0.9.png> <../q4/reconstructed_image_lambda_1.0.png>] (./main.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
- ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D9F7D044641ABFCE5C89A03A6B78CA0F;384.
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 31916 strings out of 474222
- 646685 string characters out of 5748733
- 1934975 words of memory out of 5000000
- 53708 multiletter control sequences out of 15000+600000
- 567523 words of font info for 73 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 84i,12n,93p,744b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on main.pdf (10 pages, 3280338 bytes).
-PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Package pdftex.def Info: ../q2/output_filtered/recon_shepp_logan_L_0.25
