@@ -1,5 +1,15 @@
-\section{Question 2: X-Ray Computed Tomography — Reconstruction by Filtered Backprojection (FBP)}
-
+\section{Question 2}
+The observed RRMSES are as follows (this is after normalizing both the phantom and the reconstructions to be between 0 and 1):
+\begin{itemize}
+    % \item RRMSE (Unfiltered Backprojection): 110.737793
+    \item RRMSE (ram\_lak, L=0.50000): 0.578613
+    \item RRMSE (ram\_lak, L=0.25000): 0.593879
+    \item RRMSE (shepp\_logan, L=0.50000): 0.601762
+    \item RRMSE (shepp\_logan, L=0.25000): 0.652877
+    \item RRMSE (cosine, L=0.50000): 0.596825
+    \item RRMSE (cosine, L=0.25000): 0.643436
+\end{itemize}
+The RRMSEs with $L_{\max}$ are slightly better, as we also observe in part c. This is because, with such a wide angular range, we can potentially overfit to the data, which is easier with a higher cutoff frequency. With a lower cutoff frequency, we are essentially applying a low-pass filter to the data, which can help to reduce noise and improve the stability of the reconstruction, but it may also lead to a loss of detail and an increase in RRMSE w.r.t the original phantom.
 \subsection*{(a) Filter Implementation and Reconstruction Results}
 
 Three filters were implemented in the Fourier domain using FFT/IFFT:
@@ -22,7 +32,7 @@ The unfiltered backprojection was also computed for comparison.
 \centering
 
 \begin{tabular}{c}
-\includegraphics[width=0.35\textwidth]{../q2/output_filtered/recon_no_filter.png} \\
+\includegraphics[width=0.35\textwidth]{../q2/output_filtered/recon_unfiltered.png} \\
 \textbf{No Filtering}
 \end{tabular}
 
@@ -37,7 +47,7 @@ Ram-Lak ($L = \omega_{\max}$) & Ram-Lak ($L = \omega_{\max}/2$)
 \vspace{0.5cm}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}[H]
 \centering
 
 % --- Row 3: Shepp-Logan ---
@@ -58,9 +68,6 @@ Cosine ($L = \omega_{\max}$) & Cosine ($L = \omega_{\max}/2$)
 
 \caption{Reconstruction results using different FBP filters and cutoff frequencies.}
 \end{figure}
-
-
-
 
 \paragraph{Observations and Discussion}
 
@@ -97,4 +104,68 @@ Overall, the Ram-Lak filter with full bandwidth yields the sharpest reconstructi
 
 
 \subsection*{(b) Effect of Gaussian Blurring on Reconstruction}
-\subsection*{(c) RRMSE as a Function of Cutoff Frequency}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/radon_smoothed_sigma_0.png}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/radon_smoothed_sigma_1.png}
+        
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/radon_smoothed_sigma_5.png}
+    \end{subfigure}
+    \caption{Images after Gaussian blurring with STD 0, 1 and 5}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/recon_none_L_0.500_sigma_0.png}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/recon_none_L_0.500_sigma_1.png}
+        
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/recon_none_L_0.500_sigma_5.png}
+    \end{subfigure}
+    \caption{Images after reconstruction with no filter with STD 0, 1 and 5}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/recon_ram_lak_L_0.500_sigma_0.png}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/recon_ram_lak_L_0.500_sigma_1.png}
+        
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_b/recon_ram_lak_L_0.500_sigma_5.png}
+    \end{subfigure}
+    \caption{Images after reconstruction with Ram-Lak filter with STD 0, 1 and 5}
+\end{figure}
+\begin{itemize}
+    \item RRMSE for ram\_lak filter with L=0.500, sigma=0: 0.578613
+    % \item RRMSE for none filter with L=0.500: 110.737793
+    \item RRMSE for ram\_lak filter with L=0.500, sigma=1: 0.565757
+    % \item RRMSE for none filter with L=0.500: 123.680708
+    \item RRMSE for ram\_lak filter with L=0.500, sigma=5: 0.590054
+    % \item RRMSE for none filter with L=0.500: 156.727649
+\end{itemize}
+The reconstruction error is lowest with the image convolved with Gaussian(51, 5) ($S_5$) and highest with the image convolved with Guassian(11, 1) ($S_1$). This is because the weak Gaussian blurring reduces the high-frequency noisy content in the sinogram, which makes it easier to reconstruct the original (noisy) image accurately. The extremely noisy image likely has very few learnable details because of the high noise, and hence reconstructing it from a sparse set of projections is difficult, leading to a higher RRMSE. The unblurred image suffers from having quite a bit of high-frequency content.
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_c2/rrmse_vs_L_sigma_0.png}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_c2/rrmse_vs_L_sigma_1.png}
+        
+    \end{subfigure}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{../q2/output_q2_c2/rrmse_vs_L_sigma_5.png}
+    \end{subfigure}
+\end{figure}
+We observe that higher cutoff frequencies lead to lower RRMSE values. We expect the graph to flatten out because the number of high-frequency components in the sinogram will be limited, so beyond a certain cutoff we do not expect a significant improvement in reconstruction quality. The RRMSE values are higher for the unfiltered backprojection compared to the Ram-Lak filter, which is expected since the unfiltered backprojection does not compensate for the frequency response of the system, leading to a blurred reconstruction. The RRMSE values for sigma=0 and sigma=1 are roughly similar. They start off higher than the RRMSE values for sigma=5, but they decrease more rapidly as the cutoff frequency increases. This is because the unblurred and lightly blurred sinograms contain more high-frequency content, which can be better reconstructed with higher cutoff frequencies. In contrast, the strongly blurred sinogram (sigma=5) has already lost much of its high-frequency content, so increasing the cutoff frequency does not lead to as significant an improvement in reconstruction quality.

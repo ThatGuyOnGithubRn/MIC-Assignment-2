@@ -48,7 +48,8 @@ def main():
         circle=False,
         output_size=N
     )
-
+    # phantom = (phantom - phantom.min()) / (phantom.max() - phantom.min())
+    # recon_unfiltered = (recon_unfiltered - recon_unfiltered.min()) / (recon_unfiltered.max() - recon_unfiltered.min())
     error_unfiltered = rrmse(phantom, recon_unfiltered)
     print(f"RRMSE (Unfiltered Backprojection): {error_unfiltered:.6f}")
 
@@ -74,6 +75,7 @@ def main():
                 circle=False,
                 output_size=N
             )
+            # recon = (recon - recon.min()) / (recon.max() - recon.min())
 
             error = rrmse(phantom, recon)
 
@@ -81,7 +83,7 @@ def main():
 
             plt.imshow(recon, cmap='gray')
             plt.axis('off')
-            filename = f'./output_filtered/recon_{filter_type}_L_{L:.5f}.png'
+            filename = f'./output_filtered/recon_{filter_type}_L_{L:.3f}.png'
             plt.savefig(filename, bbox_inches='tight', pad_inches=0)
             plt.close()
 

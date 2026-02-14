@@ -13,7 +13,7 @@ def rrmse(recon, ref):
 def myFilter(f, filter_type='ram_lak', L=None):
     N = f.shape[0]
     w = np.fft.fftfreq(N).reshape(-1,1)
-    w*=(2*np.pi)
+    # w*=(2*np.pi)
     if L is None:
         L = np.max(np.abs(w))
     ramp = np.abs(w)
@@ -48,7 +48,7 @@ def main():
 
     radon_transform = radon(phantom, theta=np.arange(0, 180, 3), circle=False)
 
-    freqs = 2*np.pi*np.fft.fftfreq(radon_transform.shape[0])
+    freqs = np.fft.fftfreq(radon_transform.shape[0])
     wmax = np.max(np.abs(freqs))
     filter_types = ['ram_lak', 'none']
     L_values = [wmax]
@@ -60,7 +60,7 @@ def main():
     # plt.axis('off')
     # plt.savefig(filename, bbox_inches='tight', pad_inches=0)
     # print(f"Saved {filename}")
-    for mask, sigma in zip([mask1, mask5, None], [1, 5, 0]):
+    for mask, sigma in zip([None, mask1, mask5], [0, 1, 5]):
         if mask is not None:
             orig_image = convolve2d(phantom, mask, mode='same', boundary='symm')
         else:
@@ -77,7 +77,7 @@ def main():
             for L in L_values:
                 filtered = myFilter(radon_transform, filter_type=filter_type, L=L)
                 recon_img = iradon(filtered, theta=np.arange(0, 180, 3), circle=False, filter_name=None)
-                recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
+                # recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
                 
 
                 # with open(f'recon_img_{filter_type}_L_{L:.3f}.txt', 'w') as f:

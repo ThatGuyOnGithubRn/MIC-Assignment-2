@@ -42,8 +42,6 @@ radon_transform1 = radon(image1, theta=base_theta, circle=False)
 radon_transform2 = radon(image2, theta=base_theta, circle=False)    
 recon1 = iradon(radon_transform1, theta=base_theta, circle=False)
 recon2 = iradon(radon_transform2, theta=base_theta, circle=False)
-recon1 = (recon1 - recon1.min()) / (recon1.max() - recon1.min())
-recon2 = (recon2 - recon2.min()) / (recon2.max() - recon2.min())
 print(f"RRMSE for Image 1 (unfiltered): {rrmse(recon1, image1):.6f}")
 print(f"RRMSE for Image 2 (unfiltered): {rrmse(recon2, image2):.6f}")
 
@@ -59,7 +57,6 @@ plt.axis('off')
 plt.savefig('full_degree_recon2.png', bbox_inches='tight', pad_inches=0)
 plt.close()
 
-exit()
 for i, image in enumerate([image1, image2]):
     min_rrmse = float('inf')
     argmin_rrmse = None
@@ -68,7 +65,7 @@ for i, image in enumerate([image1, image2]):
         theta = np.arange(theta_0, theta_0 + 151) % 180
         radon_transform = radon(image, theta=theta, circle=False)
         filtered = iradon(radon_transform, theta=theta, circle=False)
-        filtered = (filtered - filtered.min()) / (filtered.max() - filtered.min())
+        # filtered = (filtered - filtered.min()) / (filtered.max() - filtered.min())
         rrmses.append(rrmse(filtered, image))
         if rrmses[-1] < min_rrmse:
             min_rrmse = rrmses[-1]
@@ -78,7 +75,7 @@ for i, image in enumerate([image1, image2]):
     plt.ylabel('RRMSE')
     # plt.title(f'RRMSE vs Starting Angle for Image {i+1}')
     plt.grid()
-    plt.savefig(f'rrmse_image_{i+1}.png', bbox_inches='tight', pad_inches=0)
+    plt.savefig(f'rrmse_image_{i+1}_2.png', bbox_inches='tight', pad_inches=0)
     plt.close()
     print(f"Image {i+1}: min_rrmse = {min_rrmse}, argmin_rrmse = {argmin_rrmse}")
     theta_opt = np.arange(argmin_rrmse, argmin_rrmse + 151) % 180
@@ -88,5 +85,5 @@ for i, image in enumerate([image1, image2]):
     plt.imshow(filtered_opt, cmap='gray')
     # plt.title(f'Optimal Reconstruction for Image {i+1}')
     plt.axis('off')
-    plt.savefig(f'optimal_reconstruction_image_{i+1}.png', bbox_inches='tight', pad_inches=0)
+    plt.savefig(f'optimal_reconstruction_image_{i+1}_2.png', bbox_inches='tight', pad_inches=0)
     plt.close()

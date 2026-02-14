@@ -46,7 +46,17 @@ def main():
     phantom = resize(phantom, (N, N), mode='reflect', anti_aliasing=True)
 
     radon_transform = radon(phantom, theta=np.arange(0, 180, 3), circle=False)
-
+    recon_unfiltered = iradon(
+        radon_transform,
+        theta=np.arange(0, 180, 3),
+        filter_name=None,
+        circle=False,
+        output_size=N
+    )
+    # phantom = (phantom - phantom.min()) / (phantom.max() - phantom.min())
+    # recon_unfiltered = (recon_unfiltered - recon_unfiltered.min()) / (recon_unfiltered.max() - recon_unfiltered.min())
+    error_unfiltered = rrmse(recon_unfiltered, phantom)
+    
     freqs = np.fft.fftfreq(radon_transform.shape[0])
     wmax = np.max(np.abs(freqs))
     filter_types = ['ram_lak']
@@ -64,13 +74,13 @@ def main():
             for L in L_values:
                 filtered = myFilter(radon_transform, filter_type=filter_type, L=L)
                 recon_img = iradon(filtered, theta=np.arange(0, 180, 3), circle=False, filter_name=None)
-                recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
-                rrmses.append(rrmse(recon_img, phantom))
+                # recon_img = (recon_img - recon_img.min()) / (recon_img.max() - recon_img.min())
+                rrmses.append(rrmse(recon_img, orig_image))
             plt.plot(L_values, rrmses, label=f'{filter_type} filter, sigma={sigma}')
             plt.xlabel('L')
             plt.ylabel('RRMSE')
             plt.legend()
-            plt.savefig(f'./output_q2_c/rrmse_vs_L_sigma_{sigma}.png')
+            plt.savefig(f'./output_q2_c2/rrmse_vs_L_sigma_{sigma}.png')
             plt.close()
 
 

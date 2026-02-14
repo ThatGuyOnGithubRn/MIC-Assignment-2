@@ -21,7 +21,6 @@ def apply_prior(orig_image):
     ], axis=0)
     diff = orig_image[np.newaxis, :, :] - shifteds
     smoothness_score = np.sum(prior(diff, gamma=1e-3)) / orig_image.size 
-    #  divide by orig image size for better smoothness calc (o/w values are not comparable across diff img sizes)
     return smoothness_score
 
 
@@ -30,9 +29,9 @@ def myXrayIntegration(f,t,theta_deg,delta_s,interpolation_scheme=1):
     costheta = np.cos(theta_rad)
     sintheta = np.sin(theta_rad)
     s = np.arange(-f.shape[0], f.shape[0], delta_s) 
-    x_coords = t*costheta-s*sintheta  #(256,)
-    y_coords = t*sintheta+s*costheta  #(256,)
-    coords = np.vstack((y_coords, x_coords))  #(2,256)
+    x_coords = t*costheta-s*sintheta  
+    y_coords = t*sintheta+s*costheta  
+    coords = np.vstack((y_coords, x_coords))  
 
     # map coords wants [[y],[x]]
     line_integral = map_coordinates(f,coords,order=interpolation_scheme,mode='constant',cval=0.0)
